@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient( #1f3756, #141539);
+    box-sizing: border-box;
+    width: 100%;
+    height: 96vh;
+}
+
+.headbox {
+    color: #fff;
+    border: solid #fff;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headbox .textbox {
+    margin: 20px;
+}
+
+.headbox .textbox img {
+    margin: 0;
+}
+
+.headbox .scorebox {
+    background: #fff;
+    color: #000;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 20px;
+    color: gray;
+}
+
+.headbox .scorebox p {
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.parent .gamearea {
+    position: relative;
+    display: block;
+}
+
+.parent .gamearea .circle-paper img,
+.parent .gamearea .circle-scissors img,
+.parent .gamearea .circle-rock img {
+    margin: auto;
+}
+
+.parent .gamearea .circle-paper {
+    width: 120px;
+    height: 120px;
+    border: solid hsl(230, 89%, 62%) 15px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    z-index: 1;
+    display: flex;
+}
+
+.parent .gamearea .circle-scissors {
+    width: 120px;
+    height: 120px;
+    border: solid hsl(39, 89%, 49%) 15px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -15%;
+    top: -15%;
+    z-index: 1;
+    display: flex;
+}
+
+.parent .gamearea .circle-rock {
+    width: 120px;
+    height: 120px;
+    border: solid hsl(349, 71%, 52%) 15px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: -15%;
+    z-index: 1;
+    display: flex;
+}
+
+.parent .startedgame {
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.parent .startedgame .myplace .t1,
+.parent .startedgame .botplace .t2 {
+    margin-top: -60px;
+    margin-left: 55px;
+    position: absolute;
+}
+
+.parent .startedgame .myplace,
+.parent .startedgame .botplace {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background: hsl(237, 49%, 15%);
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.parent .startedgame .result {
+    display: block;
+    text-align: center;
+    margin: 0 40px;
+    margin-top: 40px;
+}
+
+.parent .startedgame .result .playagain {
+    color: red;
+    background: #fff;
+    border: solid #fff;
+    border-radius: 10px;
+}
+
+.parent .startedgame .result .playagain h3 {
+    margin: 10px 50px;
+}
+
+.parent .startedgame .item-paper,
+.parent .startedgame .item-scissors,
+.parent .startedgame .item-rock {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.parent .startedgame .item-paper {
+    border: solid hsl(230, 89%, 62%) 15px;
+}
+
+.parent .startedgame .item-scissors {
+    border: solid hsl(39, 89%, 49%) 15px;
+}
+
+.parent .startedgame .item-rock {
+    border: solid hsl(349, 71%, 52%) 15px;
+}
+
+.parent .startedgame img,
+.parent .startedgame img {
+    margin: auto;
+    transform: scale(2);
+    margin-top: 70px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .rulesbox {
+    color: #fff;
+    border: solid #fff 2px;
+    opacity: 0.7;
+    border-radius: 10px;
+    right: 0;
+    width: 7%;
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+footer .rulesbox h3 {
+    margin: 7px;
+}
